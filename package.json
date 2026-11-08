@@ -1,0 +1,36 @@
+{
+  "name": "dmm-cast-webdav",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "WebDAV streaming service for Debrid Media Manager Cast links",
+  "homepage": "https://dmmcast.stream",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andesco/dmm-cast-webdav.git"
+  },
+  "scripts": {
+    "test": "node --test",
+    "deploy": "wrangler deploy",
+    "deploy:local": "wrangler deploy --config wrangler.local.toml",
+    "deploy:public": "wrangler deploy --config wrangler.public.toml",
+    "dev": "wrangler dev",
+    "dev:local": "wrangler dev --config wrangler.local.toml",
+    "tail": "wrangler tail",
+    "tail:local": "wrangler tail --config wrangler.local.toml",
+    "tail:public": "wrangler tail --config wrangler.public.toml"
+  },
+  "keywords": [
+    "webdav",
+    "streaming",
+    "debrid-media-manager",
+    "dmm-cast"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "hono": "^4.10.2"
+  },
+  "devDependencies": {
+    "wrangler": "^4.45.0"
+  }
+}
